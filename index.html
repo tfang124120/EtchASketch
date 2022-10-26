@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Etch A Sketch</title>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="title"><h1>Etch A Sketch</h1></div>
+        <div class="content">
+            <div class="board"></div>
+            <div class="buttons">
+                <button onClick="changeColor('black')">Black</button>
+                <button onClick="changeColor('white')">White</button>
+                <button onClick="changeColor('gray')">Gray</button>
+                <button onClick="changeColor('random')">Random</button>
+                <button onClick="resetBoard()">Reset</button>
+            </div>
+            <div>
+                <input type="text" placeholder="Board Size" value="16" onchange="changeSize(this.value)"/>
+                <button>Change Size</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
