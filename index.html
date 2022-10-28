@@ -14,11 +14,11 @@
         <div class="content">
             <div class="board"></div>
             <div class="buttons">
-                <button onClick="changeColor('black')">Black</button>
-                <button onClick="changeColor('white')">White</button>
-                <button onClick="changeColor('gray')">Gray</button>
-                <button onClick="changeColor('random')">Random</button>
-                <button onClick="resetBoard()">Reset</button>
+                <button class="black-btn" onClick="changeColor('black')">Black</button>
+                <button class="white-btn"  onClick="changeColor('white')">White</button>
+                <button class="gray-btn"  onClick="changeColor('gray')">Gray</button>
+                <button class="random-btn"  onClick="changeColor('random')">Random</button>
+                <button class="reset-btn"  onClick="resetBoard()">Reset</button>
             </div>
             <div>
                 <input type="text" placeholder="Board Size" value="16" onchange="changeSize(this.value)"/>
